@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&family=IBM+Plex+Serif&display=swap');
+
+:root {
+  --head-font: 'Fuzzy Bubbles', cursive;
+  --text-font: 'IBM Plex Serif', serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../content/images/hash.png') center/cover no-repeat fixed;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;  
+  }
+
+.up-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.up-title {
+  font-size: 4rem;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#inputText {
+  outline: none;
+  color: lightseagreen;
+  border: 0;
+  padding: 10px;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-family: var(--text-font);
+}
+
+.btn {
+  opacity: .89;
+}
+
+.down-conatiner {
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.down-conatiner #hash {
+  color: lightseagreen;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0;
+  font-family: var(--text-font);
+}
+
+.hash-container {
+  /* background-color: rgba(0, 0, 0, 0.2); */
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+  border-radius: 5px;
+  visibility: hidden;
+}
+
+.alert-container {
+  width: 300px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+  font-size: .8rem;
+  border-radius: 5px;
+  visibility: hidden;
+}
+
+#hashtypes {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.down-item {
+  font-family: var(--text-font);
+}
+
+.alert-container .alert-close {
+  width: 1rem;
+}
+
+.alert-container .alert-close:hover {
+  opacity: .8;
+  cursor: pointer;
+}
+
+.alertSuccess {
+  color: #198754;
+  border: 1px solid #198754;
+  background-color: rgba(25, 135, 84, 0.1);
+}
+
+.alertDanger {
+  color: #ff7b72;
+  background-image: linear-gradient(rgba(248, 81, 73, 0.1));
+  border: 1px solid rgba(248, 81, 73, 0.4);
+}
+
+@media screen and (max-width: 700px) {
+  .up-title {
+    font-size: 3rem;
+  }
+
+  .down-conatiner #hash {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .up-title {
+    font-size: 2.3rem;
+  }
+
+  .down-conatiner #hash {
+    font-size: 1.2rem;
+  }
+}
+
+#hash {
+  max-width: 90vw;
+}
